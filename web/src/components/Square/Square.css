@@ -1,0 +1,31 @@
+.Square {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  top: calc(var(--top) + var(--size) * var(--row));
+  left: calc(var(--left) + var(--size) * var(--col));
+  /* z-index: 1; */
+}
+
+.Light {
+    background-color: #f0d9b5;
+}
+
+.Dark {
+    background-color: #b58863;
+}
+
+.Piece {
+  position: relative;
+  height: calc(var(--size) * .75);
+  width: calc(var(--size) * .75);
+  left: calc(var(--size) * .125);
+  top: calc(var(--size) * .125);
+  z-index: 100;
+}
+
+.Piece > * {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
