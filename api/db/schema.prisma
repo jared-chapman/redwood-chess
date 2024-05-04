@@ -22,3 +22,10 @@ model UserExample {
   email String  @unique
   name  String?
 }
+
+model Board {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  state     String
+}
